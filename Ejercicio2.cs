@@ -9,7 +9,6 @@ class Ejercicio2
         List<string> lista = new List<string>();
         const int MIN_ELEMENTOS = 10;
 
-        // Solicitar al usuario que ingrese al menos 10 elementos
         Console.WriteLine("Ingrese al menos 10 elementos para iniciar la lista:");
         while (lista.Count < MIN_ELEMENTOS)
         {
@@ -19,7 +18,6 @@ class Ejercicio2
 
         while (true)
         {
-            // Limpiar la pantalla y mostrar el menú
             Console.Clear();
             MostrarMenu();
             string opcion = Console.ReadLine();
@@ -43,7 +41,7 @@ class Ejercicio2
                     break;
                 case "f":
                     Console.WriteLine("Cerrando programa...");
-                    return; // Termina la ejecución del programa
+                    return; 
                 default:
                     Console.WriteLine("Opción no válida. Por favor, elija una opción válida.");
                     break;
